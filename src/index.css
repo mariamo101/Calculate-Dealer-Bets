@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Global mobile-safe reset */
 html,
 body,
 #root {
