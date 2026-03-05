@@ -65,16 +65,17 @@ function App() {
           {/* Title */}
           <h1
             className="
-              w-full max-w-[560px] text-center
-              px-4 sm:px-6 py-3
-              font-semibold font-['Playfair_Display']
-              tracking-wide text-[#E6C96E]
-              bg-gradient-to-b from-[#145A32] to-[#0D3B24]
-              rounded-lg border border-[#D4AF37]
-              shadow-[0_4px_12px_rgba(9,40,21,0.5)]
-              shadow-[0_0_15px_rgba(214,169,55,0.6)]
-              whitespace-nowrap
-            "
+    w-full max-w-[560px] text-center
+    px-4 sm:px-6 py-3
+    font-semibold font-['Playfair_Display']
+    tracking-wide text-[#E6C96E]
+    bg-gradient-to-b from-[#145A32] to-[#0D3B24]
+    rounded-lg border border-[#D4AF37]
+    shadow-[0_4px_12px_rgba(9,40,21,0.5)]
+    shadow-[0_0_15px_rgba(214,169,55,0.6)]
+    whitespace-nowrap
+    landscape:hidden
+  "
             style={{ fontSize: "clamp(16px, 4.2vw, 26px)" }}
           >
             ♠︎ Calculate Dealer Bets ♦︎
