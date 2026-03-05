@@ -10,7 +10,7 @@ The app displays real betting table images and allows the user to mentally calcu
 👉 Live Demo: [https://my-link.com](https://calculate-dealer-bets.vercel.app/)
 
 📸 Preview
-<img width="1280" height="718" alt="Image" src="https://github.com/user-attachments/assets/7f671789-e2e0-46a9-9ffc-cfb34cf17568" />
+<img width="556" height="627" alt="Image" src="https://github.com/user-attachments/assets/4d981193-b0c5-4f75-839c-96ba548bfc33" />
 
 ✨ Features
 
