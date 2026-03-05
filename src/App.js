@@ -74,7 +74,7 @@ function App() {
     shadow-[0_4px_12px_rgba(9,40,21,0.5)]
     shadow-[0_0_15px_rgba(214,169,55,0.6)]
     whitespace-nowrap
-    landscape:hidden md:landscape:block
+    landscape:hidden 
   "
             style={{ fontSize: "clamp(16px, 4.2vw, 26px)" }}
           >
