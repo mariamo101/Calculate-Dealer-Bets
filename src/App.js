@@ -1,5 +1,5 @@
 import "./App.css";
-import bg from "./background.png";
+import bg from "./background.webp";
 import { useEffect, useState } from "react";
 import BetCards from "./components/BetCards";
 import Button from "./components/Button";
@@ -49,16 +49,17 @@ function App() {
 
   return (
     <div
-      className="relative min-h-screen w-full overflow-hidden flex flex-col items-center justify-center gap-6 px-4 sm:px-6 lg:px-8"
+      className="relative min-h-[100dvh] w-screen overflow-hidden flex flex-col items-center justify-center gap-6 px-4 sm:px-6 lg:px-8"
       style={{
         backgroundImage: `url(${bg})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
       }}
     >
       <div className="absolute inset-0 bg-black/40 backdrop-blur-[2px]" />
 
-      <div className="relative z-10 min-h-screen flex items-center justify-center">
+      <div className="relative z-10 min-h-[100dvh] w-full flex items-center justify-center">
         <div className="w-full max-w-[720px] flex flex-col items-center gap-6 px-4">
           <h1
             className="
@@ -83,7 +84,7 @@ function App() {
             <div className="text-[#E6C96E]">Loading...</div>
           )}
 
-          <div className="flex justify-center gap-6 mt-1">
+          <div className="flex flex-wrap justify-center gap-4 mt-1 w-full">
             <FlashCard onClick={handleToggleAnswer} isOpen={showAnswer} />
             <Button onClick={handleNextBet} />
           </div>
