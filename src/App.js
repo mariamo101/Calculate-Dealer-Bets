@@ -65,18 +65,19 @@ function App() {
           {/* Title */}
           <h1
             className="
-    w-full max-w-[560px] text-center
-    px-4 sm:px-6 py-3
+    w-fit max-w-[calc(100vw-32px)]
+    text-center
+    px-8 sm:px-10 py-3
     font-semibold font-['Playfair_Display']
-    tracking-wide text-[#E6C96E]
-    bg-gradient-to-b from-[#145A32] to-[#0D3B24]
-    rounded-lg border border-[#D4AF37]
+    tracking-[0.02em] text-[#E6C96E]
+    bg-gradient-to-b from-[#166534] via-[#145A32] to-[#0D3B24]
+    rounded-xl border border-[#D4AF37]
     shadow-[0_4px_12px_rgba(9,40,21,0.5)]
-    shadow-[0_0_15px_rgba(214,169,55,0.6)]
+    shadow-[0_0_18px_rgba(214,169,55,0.45)]
     whitespace-nowrap
-    landscape:hidden 
+    [@media(orientation:landscape)_and_(max-height:434px)]:hidden
   "
-            style={{ fontSize: "clamp(16px, 4.2vw, 26px)" }}
+            style={{ fontSize: "clamp(13px, 4vw, 26px)" }}
           >
             ♠︎ Calculate Dealer Bets ♦︎
           </h1>
@@ -97,6 +98,27 @@ function App() {
             <FlashCard onClick={handleToggleAnswer} isOpen={showAnswer} />
             <Button onClick={handleNextBet} />
           </div>
+          {/* Footer */}
+          <p
+            className="
+        mt-3
+        text-xs sm:text-sm
+        text-[#E6C96E]/70
+        tracking-wide
+        font-['Playfair_Display']
+        text-center
+      "
+          >
+            Created by{" "}
+            <a
+              href="https://github.com/mariamo101"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#E6C96E] hover:underline"
+            >
+              Mariami Makhniashvili
+            </a>
+          </p>
         </div>
       </div>
     </div>
